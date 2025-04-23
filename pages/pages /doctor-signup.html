@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Signup</title>
+  <style>
+    body {
+      background: linear-gradient(to top, #cce7ff, #f2f9ff);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: #0077cc;
+    }
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+    button {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      width: 100%;
+      border-radius: 0.5rem;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: #0077cc;
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Doctor Signup</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Phone" required />
+      <input type="password" placeholder="Create Password" required />
+      <button type="submit">Sign Up</button>
+      <a href="doctor-login.html">Already have an account? Login</a>
+    </form>
+  </div>
+</body>
+</html>
