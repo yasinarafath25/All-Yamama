@@ -6,6 +6,19 @@
 <a href="services.html">Services</a>
   <style>
     body {
+<!-- Navigation Menu -->
+<nav style="background-color: #1a1a2e; padding: 10px;">
+  <ul style="display: flex; gap: 15px; list-style: none; margin: 0; padding: 0;">
+    <li><a href="pages/services.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Services</a></li>
+    <li><a href="pages/about.html" style="color: skyblue; text-decoration: none; font-weight: bold;">About Us</a></li>
+    <li><a href="pages/contact.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Contact Us</a></li>
+    <li><a href="pages/doctor-dashboard.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Doctor Dashboard</a></li>
+    <li><a href="pages/patient-dashboard.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Patient Dashboard</a></li>
+    <li><a href="pages/doctor-login.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Doctor Login</a></li>
+    <li><a href="pages/doctor-signup.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Doctor Signup</a></li>
+    <li><a href="pages/patient-signup.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Patient Signup</a></li>
+  </ul>
+</nav>
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to top, #aee1f9, #e3f2fd);
