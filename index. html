@@ -1,28 +1,31 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All Yamama Vision Center</title>
-<a href="services.html">Services</a>
   <style>
     body {
-<!-- Navigation Menu -->
-<nav style="background-color: #1a1a2e; padding: 10px;">
-  <ul style="display: flex; gap: 15px; list-style: none; margin: 0; padding: 0;">
-    <li><a href="pages/services.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Services</a></li>
-    <li><a href="pages/about.html" style="color: skyblue; text-decoration: none; font-weight: bold;">About Us</a></li>
-    <li><a href="pages/contact.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Contact Us</a></li>
-    <li><a href="pages/doctor-dashboard.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Doctor Dashboard</a></li>
-    <li><a href="pages/patient-dashboard.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Patient Dashboard</a></li>
-    <li><a href="pages/doctor-login.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Doctor Login</a></li>
-    <li><a href="pages/doctor-signup.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Doctor Signup</a></li>
-    <li><a href="pages/patient-signup.html" style="color: skyblue; text-decoration: none; font-weight: bold;">Patient Signup</a></li>
-  </ul>
-</nav>
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to top, #aee1f9, #e3f2fd);
       overflow-x: hidden;
+    }
+    nav {
+      background-color: #1a1a2e;
+      padding: 10px;
+    }
+    nav ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: skyblue;
+      text-decoration: none;
+      font-weight: bold;
     }
     header {
       background-color: rgba(255, 255, 255, 0.8);
@@ -54,8 +57,6 @@
       padding-left: 100%;
       animation: scroll-text 15s linear infinite;
     }
-<a href="contact.html">Contact Us</a>
-<a href="about.html">About Us</a>
     @keyframes scroll-text {
       from { transform: translateX(0); }
       to { transform: translateX(-100%); }
@@ -94,15 +95,32 @@
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="pages/about.html">About Us</a></li>
+      <li><a href="pages/contact.html">Contact Us</a></li>
+      <li><a href="pages/doctor-dashboard.html">Doctor Dashboard</a></li>
+      <li><a href="pages/patient-dashboard.html">Patient Dashboard</a></li>
+      <li><a href="pages/doctor-login.html">Doctor Login</a></li>
+      <li><a href="pages/doctor-signup.html">Doctor Signup</a></li>
+      <li><a href="pages/patient-signup.html">Patient Signup</a></li>
+    </ul>
+  </nav>
+
   <header>
     <div class="menu-container">
       <div class="menu"></div>
       <div class="menu"></div>
       <div class="menu"></div>
     </div>
-  </header>  <div class="search-box">
+  </header>
+
+  <div class="search-box">
     <input type="text" placeholder="Search doctor by name or operation type..." />
-  </div>  <section class="doctor-section">
+  </div>
+
+  <section class="doctor-section">
     <!-- Fake Doctor Profiles -->
     <div class="doctor-card">
       <img src="https://via.placeholder.com/100" alt="Doctor" />
@@ -134,8 +152,9 @@
       <p>Specialist: Pediatric Eye</p>
       <p>Time: 1 PM - 5 PM</p>
     </div>
-    <!-- Add 5 more cards similarly -->
-  </section>  <div class="title-scroll">
+  </section>
+
+  <div class="title-scroll">
     <span>All Yamama Vision Center</span>
   </div>
 </body>
