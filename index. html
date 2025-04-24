@@ -41,6 +41,7 @@
       padding-left: 100%;
       animation: scroll-text 15s linear infinite;
     }
+<a href="contact.html">Contact Us</a>
 <a href="about.html">About Us</a>
     @keyframes scroll-text {
       from { transform: translateX(0); }
