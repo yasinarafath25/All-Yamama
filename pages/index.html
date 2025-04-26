@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Yamama Vision Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top, #aee1f9, #e3f2fd);
+      overflow-x: hidden;
+    }
+    nav {
+      background-color: #1a1a2e;
+      padding: 10px 0;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: skyblue;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffffff;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .menu-container {
+      cursor: pointer;
+    }
+    .menu {
+      width: 30px;
+      height: 4px;
+      background-color: #333;
+      margin: 6px 0;
+      border-radius: 2px;
+    }
+    .search-box {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .search-box input {
+      padding: 0.7rem;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .doctor-section {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .doctor-card {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .doctor-card:hover {
+      transform: translateY(-5px);
+    }
+    .doctor-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .doctor-card h3 {
+      margin: 0.5rem 0 0.2rem;
+      color: #004080;
+    }
+    .doctor-card p {
+      margin: 0.2rem 0;
+      color: #555;
+      font-size: 15px;
+    }
+    .title-scroll {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #0288d1;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 10px 0;
+    }
+    .title-scroll span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-text 20s linear infinite;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    @keyframes scroll-text {
+      from { transform: translateX(0); }
+      to { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="pages/about.html">About Us</a></li>
+      <li><a href="pages/contact.html">Contact Us</a></li>
+      <li><a href="pages/doctor-dashboard.html">Doctor Dashboard</a></li>
+      <li><a href="pages/patient-dashboard.html">Patient Dashboard</a></li>
+      <li><a href="pages/doctor-login.html">Doctor Login</a></li>
+      <li><a href="pages/doctor-signup.html">Doctor Signup</a></li>
+      <li><a href="pages/patient-signup.html">Patient Signup</a></li>
+    </ul>
+  </nav>
+
+  <!-- Optional Menu Header -->
+  <header>
+    <div class="menu-container">
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+    </div>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-box">
+    <input type="text" placeholder="Search doctor by name or operation type..." />
+  </div>
+
+  <!-- Doctor Profiles Section -->
+  <section class="doctor-section">
+    <div class="doctor-card">
+      <img src="https://via.placeholder.com/100" alt="Doctor" />
+      <h3>Dr. Amina Khaled</h3>
+      <p>Specialist: Cataract Surgery</p>
+      <p>Time: 9 AM - 1 PM</p>
+    </div>
+    <div class="doctor-card">
+      <img src="https://via.placeholder.com/100" alt="Doctor" />
+      <h3>Dr. Yasir Rahman</h3>
+      <p>Specialist: LASIK</p>
+      <p>Time: 11 AM - 3 PM</p>
+    </div>
+    <div class="doctor-card">
+      <img src="https://via.placeholder.com/100" alt="Doctor" />
+      <h3>Dr. Noor Fatima</h3>
+      <p>Specialist: Retina Surgery</p>
+      <p>Time: 2 PM - 6 PM</p>
+    </div>
+    <div class="doctor-card">
+      <img src="https://via.placeholder.com/100" alt="Doctor" />
+      <h3>Dr. Ahmed Saif</h3>
+      <p>Specialist: Glaucoma</p>
+      <p>Time: 8 AM - 12 PM</p>
+    </div>
+    <div class="doctor-card">
+      <img src="https://via.placeholder.com/100" alt="Doctor" />
+      <h3>Dr. Hiba Anwar</h3>
+      <p>Specialist: Pediatric Eye</p>
+      <p>Time: 1 PM - 5 PM</p>
+    </div>
+  </section>
+
+  <!-- Scrolling Hospital Name -->
+  <div class="title-scroll">
+    <span>All Yamama Vision Center</span>
+  </div>
+
+</body>
+</html>
