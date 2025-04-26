@@ -38,10 +38,35 @@
       border-radius: 8px;
       font-size: 18px;
       transition: background 0.3s, transform 0.3s;
+      display: flex;
+      align-items: center;
+    }
+    li::before {
+      content: "✔️";
+      color: #0288d1;
+      margin-right: 10px;
+      font-size: 20px;
     }
     li:hover {
       background: #d0e8ff;
       transform: translateX(5px);
+    }
+    .back-home {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .back-home a {
+      background-color: #0288d1;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .back-home a:hover {
+      background-color: #0277bd;
     }
   </style>
 </head>
@@ -60,6 +85,10 @@
       <li>Eye Trauma Surgery (দুর্ঘটনায় ক্ষতিগ্রস্ত চোখের সার্জারি)</li>
       <li>Comprehensive Eye Exams (সম্পূর্ণ চোখের পরীক্ষা ও স্ক্যানিং)</li>
     </ul>
+
+    <div class="back-home">
+      <a href="../index.html">Back to Home</a>
+    </div>
   </div>
 </body>
 </html>
