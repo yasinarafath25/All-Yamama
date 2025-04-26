@@ -19,6 +19,7 @@
       padding: 40px;
       border-radius: 15px;
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in;
     }
     h1 {
       text-align: center;
@@ -36,6 +37,27 @@
     strong {
       color: #0056b3;
     }
+    .back-home {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .back-home a {
+      background-color: #0288d1;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .back-home a:hover {
+      background-color: #0277bd;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -47,12 +69,16 @@
     </p>
     <p>
       Established with the vision to make eye health accessible and affordable, we combine modern technology with expert medical staff.
-      We specialize in cataract surgery, retina treatments, glaucoma care, and other advanced procedures tailored to patient needs.
+      We specialize in <strong>cataract surgery</strong>, <strong>retina treatments</strong>, <strong>glaucoma care</strong>, and other advanced procedures tailored to patient needs.
     </p>
     <p>
       At <strong>All Yamama</strong>, our mission is to protect and restore vision for all ages. We believe in integrity, care, and innovation.
       Thank you for trusting us with your sight.
     </p>
+
+    <div class="back-home">
+      <a href="../index.html">Back to Home</a>
+    </div>
   </div>
 </body>
 </html>
