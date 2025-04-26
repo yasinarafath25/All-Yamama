@@ -17,6 +17,8 @@
     }
     nav ul {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 15px;
       list-style: none;
       margin: 0;
@@ -26,12 +28,17 @@
       color: skyblue;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
     }
     header {
       background-color: rgba(255, 255, 255, 0.8);
       padding: 1rem;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+    }
+    .menu-container {
+      cursor: pointer;
     }
     .menu {
       width: 30px;
@@ -39,9 +46,6 @@
       background-color: #333;
       margin: 6px 0;
       border-radius: 2px;
-    }
-    .menu-container {
-      cursor: pointer;
     }
     .title-scroll {
       position: fixed;
@@ -95,6 +99,8 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <nav>
     <ul>
       <li><a href="pages/services.html">Services</a></li>
@@ -108,6 +114,7 @@
     </ul>
   </nav>
 
+  <!-- Optional Menu Header -->
   <header>
     <div class="menu-container">
       <div class="menu"></div>
@@ -116,12 +123,13 @@
     </div>
   </header>
 
+  <!-- Search Bar -->
   <div class="search-box">
     <input type="text" placeholder="Search doctor by name or operation type..." />
   </div>
 
+  <!-- Doctor Profiles Section -->
   <section class="doctor-section">
-    <!-- Fake Doctor Profiles -->
     <div class="doctor-card">
       <img src="https://via.placeholder.com/100" alt="Doctor" />
       <h3>Dr. Amina Khaled</h3>
@@ -154,8 +162,10 @@
     </div>
   </section>
 
+  <!-- Scrolling Hospital Name -->
   <div class="title-scroll">
     <span>All Yamama Vision Center</span>
   </div>
+
 </body>
 </html>
