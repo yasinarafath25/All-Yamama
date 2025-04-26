@@ -1,55 +1,69 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - All Yamama Vision Center</title>
+  <link rel="stylesheet" href="../style.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #dbe9ff, #ffffff);
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(to bottom, #dbe9ff, #ffffff);
+      padding: 30px;
     }
     .container {
       max-width: 900px;
-      margin: 50px auto;
-      background: #ffffffd6;
+      margin: auto;
+      background: #ffffffcc;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
-    h1 {
+    h1, h2 {
       text-align: center;
       color: #004080;
       margin-bottom: 30px;
     }
+    form {
+      margin-top: 20px;
+    }
     form label {
       display: block;
       margin-top: 15px;
+      font-weight: 500;
       color: #333;
     }
     form input, form textarea {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #aaa;
-      border-radius: 5px;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
     }
     form button {
-      margin-top: 20px;
-      padding: 10px 20px;
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 30px;
       background: #0077cc;
-      color: white;
+      color: #fff;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      font-size: 18px;
       cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #005fa3;
     }
     iframe {
       width: 100%;
-      height: 300px;
-      margin-top: 30px;
+      height: 350px;
+      margin-top: 40px;
       border: none;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -58,23 +72,24 @@
     <h1>Contact Us</h1>
     <form action="#" method="POST">
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required><label for="email">Email Address</label>
-  <input type="email" id="email" name="email" required>
+      <input type="text" id="name" name="name" required>
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
 
-  <button type="submit">Send Message</button>
-</form>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-<h2 style="margin-top: 50px; color:#004080;">Find Us</h2>
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.306857633265!2d44.36634877485448!3d33.32705277349898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1557812b2293eb11%3A0x764155d8a35c5b1d!2zQWxsIFlhbWFtYSBWaXNpb24gQ2VudGVy!5e0!3m2!1sen!2siq!4v1713885574241!5m2!1sen!2siq" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+      <button type="submit">Send Message</button>
+    </form>
 
+    <h2>Find Us</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.306857633265!2d44.36634877485448!3d33.32705277349898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1557812b2293eb11%3A0x764155d8a35c5b1d!2zQWxsIFlhbWFtYSBWaXNpb24gQ2VudGVy!5e0!3m2!1sen!2siq!4v1713885574241!5m2!1sen!2siq" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 </body>
 </html>
